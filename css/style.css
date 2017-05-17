@@ -1,0 +1,313 @@
+@import "bootstrap.min.css";
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu.eot');
+  src: url('../fonts/Ubuntu.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu.woff') format('woff'), url('../fonts/Ubuntu.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #f3f3f3;
+  font-family: 'Ubuntu', sans-serif;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+#controlbar {
+  margin-top: 50px;
+}
+#controlbar .row {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+#controlbar .col-md-4,
+#controlbar .col-sm-4,
+#controlbar .col-md-12 {
+  padding: 0 !important;
+}
+#controlbar .control1 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none !important;
+}
+#controlbar .control2 {
+  border-left: solid 1px #aaaaaa;
+  border-right: solid 1px #aaaaaa;
+}
+#controlbar .control3 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none !important;
+}
+#controlbar .controlwrapper {
+  padding: 15px;
+  background-color: #ffffff;
+  border: solid 1px #c5c5c5;
+  color: #34485F;
+}
+#controlbar .controlwrapper img {
+  display: inline-block;
+}
+#controlbar .controlwrapper .infowrap {
+  display: inline-block;
+  padding-left: 15px;
+}
+#controlbar .controlwrapper .infowrap h3 {
+  font-weight: bold;
+  position: relative;
+  top: -15px;
+}
+#controlbar .linktopdf {
+  color: #34485F;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  width: 200px;
+}
+#controlbar .linktopdf img {
+  padding-right: 10px;
+}
+#controlbar .linktopdf:hover {
+  text-decoration: none;
+}
+#controlbar .linktopdf:focus {
+  text-decoration: none;
+}
+.indicator h1 {
+  color: #397D9B;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 24px;
+}
+.indicator p {
+  margin: 0px !important;
+}
+.indicator .infotextstudent {
+  padding-left: 30px;
+  margin-bottom: 10px !important;
+}
+.indicator .wrapboard {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: solid 1px #c5c5c5;
+  border-radius: 5px;
+}
+.indicator .wrapboard .imgwrapper {
+
+}
+
+.indicator .wrapboard  .wrapperboardpart1 {
+  border-bottom: solid 1px #aaaaaa;
+  margin: -15px;
+
+}
+
+.indicator .wrapboard .tworowsimg {
+  height: 128px;
+}
+.indicator .wrapboard .tworowsimg .gaugeperform {
+  margin-top: 30px;
+}
+.indicator .wrapboard .info50 {
+  padding: 15px;
+  margin: 0 -15px;
+  height:50%;
+  border-left: solid 1px #aaaaaa;
+  border-bottom: solid 1px #aaaaaa;
+}
+
+.indicator .wrapboard .rightcol {
+  margin: 15px 15px 0 0;
+}
+
+
+.indicator .wrapboard .info50:first-of-type {
+  margin-top: -15px;
+}
+.indicator .wrapboard .info50:last-of-type {
+  border-bottom:none;
+}
+.indicator .wrapboard .referencegroup {
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.indicator .wrapboard .referencegroup img {
+  display: inline-block;
+  margin-right: 10px;
+}
+.indicator .wrapboard .referencegroup p {
+  display: inline-block;
+}
+
+
+.noreference .wrapperboardpart1 {
+  border:none !important;
+}
+
+
+
+
+
+/* the gauges */
+.controlgauge {
+  width: 75px;
+  height: 60px;
+  display: inline-block;
+}
+.controlgauge tspan {
+  display: none;
+}
+.gaugeperform {
+  width: 9em;
+  height: 7em;
+  margin: 0 auto;
+}
+.gaugeperform tspan {
+  font-size: 24px;
+  position: relative;
+  top: 5px;
+}
+.fieldoftwo .imgwrapper {
+  border-bottom: none !important;
+  border-right: 1px solid #aaaaaa;
+  margin: -15px;
+  padding: 15px;
+}
+.fieldoftwo .referencegroup {
+  padding-left: 15px;
+}
+.fieldoftwo .referencegroup p {
+  margin-top: 10px !important;
+}
+
+
+.fieldoftwo .referencegroup {
+    margin: -15px;
+    padding: 15px;
+
+}
+
+.fieldoftwo .wrapboard .referencegroup {
+  margin-top:0px !important;
+}
+
+.fieldoftwo .wrapboard .referencegroup p {
+  width: calc(100% - 50px);
+  margin-top:20px !important;
+}
+
+@media (max-width: 1200px) {
+  #controlbar .controlwrapper .infowrap {
+    width: 100%;
+  }
+  #controlbar .controlgauge {
+    display: block !important;
+    margin: 0 auto;
+  }
+  #controlbar .infowrap {
+    padding-left: 0px !important;
+  }
+  #controlbar h3,
+  #controlbar p {
+    text-align: center;
+  }
+}
+.indicator .tworowsimg {
+  height: 128px;
+}
+.indicator .tworowsimg .gaugeperform {
+  margin-top: 18px !important;
+}
+.indicator .tworows {
+  font-size: 14px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .controlwrapper .infowrap h3 {
+    height: 52px;
+  }
+  .indicator .imgwrapper {
+    height: 110px;
+  }
+  .indicator .tworowsimg {
+    height: 128px;
+  }
+  .indicator .tworowsimg .gaugeperform {
+    margin-top: 10px !important;
+  }
+  .indicator .tworows {
+    font-size: 13px;
+  }
+  .indicator svg {
+    left: -5px !important;
+  }
+  .indicator .referencegroup img {
+    display: block !important;
+    margin: 0 auto 20px auto !important;
+  }
+}
+@media (max-width: 767px) {
+  #controlbar .controlgauge {
+    display: inline-block !important;
+    margin: 0 auto;
+  }
+  #controlbar .control1 {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-right: 1px solid #c5c5c5 !important;
+    border-bottom: none !important;
+  }
+  #controlbar .control3 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid #c5c5c5 !important;
+    border-top: none !important;
+  }
+  #controlbar .infowrap {
+    padding-left: 15px !important;
+  }
+  #controlbar h3,
+  #controlbar p {
+    text-align: left;
+  }
+  .infotextstudent {
+    padding-left: 0px !important;
+  }
+  .indicator .tworowsimg {
+    height: 104px !important;
+  }
+  .indicator .tworowsimg .gaugeperform {
+    margin-top: 0px !important;
+  }
+  .indicator .tworows {
+    font-size: 14px;
+  }
+}
+@media (max-width: 704px) {
+  .indicator .tworowsimg {
+    height: 126px !important;
+  }
+  .indicator .tworowsimg .gaugeperform {
+    margin-top: 20px !important;
+  }
+  .indicator .tworows {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  #controlbar .controlgauge {
+    display: block !important;
+    margin: 0 auto;
+  }
+  #controlbar .infowrap {
+    padding-left: 0px !important;
+    width: 100%;
+  }
+  #controlbar h3,
+  #controlbar p {
+    text-align: center;
+  }
+}
