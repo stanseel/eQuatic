@@ -105,6 +105,9 @@ p {
   margin: -15px;
 
 }
+.indicator .wrapboard  .wrapperboardpart1 .imgwrapper{
+  padding-left: 15px;
+}
 
 .indicator .wrapboard .tworowsimg {
   height: 128px;
@@ -124,35 +127,41 @@ p {
   margin: 15px 15px 0 0;
 }
 
-
 .indicator .wrapboard .info50:first-of-type {
   margin-top: -15px;
 }
 .indicator .wrapboard .info50:last-of-type {
   border-bottom:none;
 }
-.indicator .wrapboard .referencegroup {
-  padding-top: 15px;
+.indicator .wrapboard .referencegroup, .indicator .wrapboard .rankings  {
+  /*padding-top: 15px;*/
+  display:table;
   margin-top: 15px;
 }
-.indicator .wrapboard .referencegroup img {
-  display: inline-block;
-  margin-right: 10px;
+.indicator .wrapboard .referencegroup img, .indicator .wrapboard .rankings img {
+  display:table-cell;
+  vertical-align: middle;
 }
-.indicator .wrapboard .referencegroup p {
-  display: inline-block;
+p.refgroup{
+  background-image: url("../images/students-icon.png");
+  background-repeat: no-repeat;
+  background-size: 36px 22px;
+  padding-left: 45px;
 }
-
+.indicator .wrapboard .referencegroup p, .indicator .wrapboard .rankings p {
+  /*display: inline-block;*/
+  display:table-cell;
+  vertical-align: middle;
+}
 
 .noreference .wrapperboardpart1 {
   border:none !important;
 }
 
+/* - - - - - - - - - - - -- - - - - - - - - - - - */
+/* - - - - - - - - - THE GAUGES - - - - - - - - - */
+/* - - - - - - - - - - - -- - - - - - - - - - - - */
 
-
-
-
-/* the gauges */
 .controlgauge {
   width: 75px;
   height: 60px;
@@ -177,6 +186,9 @@ p {
   margin: -15px;
   padding: 15px;
 }
+.norightborder{
+  border-right: none !important;
+}
 .fieldoftwo .referencegroup {
   padding-left: 15px;
 }
@@ -192,12 +204,12 @@ p {
 }
 
 .fieldoftwo .wrapboard .referencegroup {
-  margin-top:0px !important;
+  /*margin-top:0px !important;*/
 }
 
 .fieldoftwo .wrapboard .referencegroup p {
   width: calc(100% - 50px);
-  margin-top:20px !important;
+  /*margin-top:20px !important;*/
 }
 
 @media (max-width: 1200px) {
@@ -225,6 +237,7 @@ p {
 .indicator .tworows {
   font-size: 14px;
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
   .controlwrapper .infowrap h3 {
     height: 52px;
@@ -249,6 +262,7 @@ p {
     margin: 0 auto 20px auto !important;
   }
 }
+
 @media (max-width: 767px) {
   #controlbar .controlgauge {
     display: inline-block !important;
@@ -286,6 +300,7 @@ p {
     font-size: 14px;
   }
 }
+
 @media (max-width: 704px) {
   .indicator .tworowsimg {
     height: 126px !important;
@@ -297,6 +312,7 @@ p {
     font-size: 14px;
   }
 }
+
 @media (max-width: 425px) {
   #controlbar .controlgauge {
     display: block !important;

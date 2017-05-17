@@ -151,3 +151,22 @@ var a = new JustGage({
                     gaugeWidthScale: borderwidthgauge
                     //labelFontColor:
                   });
+
+
+
+
+                  var test = new JustGage({
+                    id: "gauge500",
+                    value: 30,
+                    min: 0,
+                    max: 100,
+                    title: "",
+                    gaugeColor:bggauge,
+                    valueFontColor:fontcolorvalue,
+                    valueFontFamily:fontfamilyvalue,
+                    hideMinMax:true,
+                    levelColors:examplegreen,
+                    gaugeWidthScale: borderwidthgauge
+                    //labelFontColor:
+                  });
+
