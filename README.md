@@ -3,7 +3,7 @@ css styling eQuATIC report templates for UGent
 
 Demo https://stanseel.github.io/eQuatic/
 
-*CSS / HTML CODE IS UPDATED*
+**CSS / HTML CODE IS UPDATED**
 
 Most of the lay-out is now done by using display:table / table-row / table-cell. This makes vertical centering more easy and flexible.  
 
