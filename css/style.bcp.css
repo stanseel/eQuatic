@@ -32,8 +32,8 @@ p {
   border-right: none !important;
 }
 #controlbar .control2 {
-  border-left: solid 1px #c5c5c5;
-  border-right: solid 1px #c5c5c5;
+  border-left: solid 1px #aaaaaa;
+  border-right: solid 1px #aaaaaa;
 }
 #controlbar .control3 {
   border-top-right-radius: 5px;
@@ -85,76 +85,79 @@ p {
 .indicator p {
   margin: 0px !important;
 }
-
-/* - - - - - - - - - - - -- - - - - - - - - - - - */
-/* - - - - - - - - TABLE LAYOUT - - - - - - - - - */
-/* - - - - - - - - - - - -- - - - - - - - - - - - */
-
-.tbl-container{
-  display:table;
-  width:100%;
+.indicator .infotextstudent {
+  padding-left: 30px;
+  margin-bottom: 10px !important;
+}
+.indicator .wrapboard {
+  margin-bottom: 30px;
+  padding: 15px;
   background-color: #ffffff;
-  margin-bottom: 20px;
+  border: solid 1px #c5c5c5;
+  border-radius: 5px;
 }
-.tbl-container-inner{
+.indicator .wrapboard .imgwrapper {
+
+}
+
+.indicator .wrapboard  .wrapperboardpart1 {
+  border-bottom: solid 1px #aaaaaa;
+  margin: -15px;
+
+}
+.indicator .wrapboard  .wrapperboardpart1 .imgwrapper{
+  padding-left: 15px;
+}
+
+.indicator .wrapboard .tworowsimg {
+  height: 128px;
+}
+.indicator .wrapboard .tworowsimg .gaugeperform {
+  margin-top: 30px;
+}
+.indicator .wrapboard .info50 {
+  padding: 15px;
+  margin: 0 -15px;
+  height:50%;
+  border-left: solid 1px #aaaaaa;
+  border-bottom: solid 1px #aaaaaa;
+}
+
+.indicator .wrapboard .rightcol {
+  margin: 15px 15px 0 0;
+}
+
+.indicator .wrapboard .info50:first-of-type {
+  margin-top: -15px;
+}
+.indicator .wrapboard .info50:last-of-type {
+  border-bottom:none;
+}
+.indicator .wrapboard .referencegroup, .indicator .wrapboard .rankings  {
+  /*padding-top: 15px;*/
   display:table;
-  width:100%;
+  margin-top: 15px;
 }
-.tbl-row{
-  display: table-row;
+.indicator .wrapboard .referencegroup img, .indicator .wrapboard .rankings img {
+  display:table-cell;
+  vertical-align: middle;
 }
-.tbl-cell{
-  display: table-cell;
+p.refgroup{
+  background-image: url("../images/students-icon.png");
+  background-repeat: no-repeat;
+  background-size: 36px 22px;
+  padding-left: 45px;
+}
+.indicator .wrapboard .referencegroup p, .indicator .wrapboard .rankings p {
+  /*display: inline-block;*/
+  display:table-cell;
   vertical-align: middle;
 }
 
-.tbl-cell.data{
-  padding:15px;
-  border-bottom: 1px solid #c5c5c5;
-  width:100%;
+.noreference .wrapperboardpart1 {
+  border:none !important;
 }
 
-.tbl-cell.width60  .tbl-row .tbl-cell{
-  border-right:1px solid #c5c5c5;
-}
-
-.tbl-cell.width60  .tbl-row:last-child .tbl-cell {
-  
-}
-.tbl-cell.width60  .tbl-row:first-child .tbl-cell {
-  border-radius: 0 5px 0 0;
-  border-top:1px solid #c5c5c5;
-}
-.width40{
-  width: 40%;
-}
-.width60{
-  width: 60%;
-}
-.spancols{
-  display:table-caption !important;
-  caption-side:bottom;
-  background-color: #ffffff;
-  border: 1px solid #c5c5c5;
-  border-top:none;
-  padding:15px;
-  border-radius: 0 0 5px 5px;
-}
-.tbl-cell.gauge{
-  border: 1px solid #c5c5c5;
-  padding:0px;
-  text-align: center;
-  border-top-left-radius: 5px;
-}
-.rounded-bottomleft{
-  border-bottom-left-radius: 5px;
-}
-.rounded-bottomright{
-  border-bottom-right-radius: 5px !important;
-}
-.singleitem{
-  height:100px;
-}
 /* - - - - - - - - - - - -- - - - - - - - - - - - */
 /* - - - - - - - - - THE GAUGES - - - - - - - - - */
 /* - - - - - - - - - - - -- - - - - - - - - - - - */
@@ -177,6 +180,37 @@ p {
   position: relative;
   top: 5px;
 }
+.fieldoftwo .imgwrapper {
+  border-bottom: none !important;
+  border-right: 1px solid #aaaaaa;
+  margin: -15px;
+  padding: 15px;
+}
+.norightborder{
+  border-right: none !important;
+}
+.fieldoftwo .referencegroup {
+  padding-left: 15px;
+}
+.fieldoftwo .referencegroup p {
+  margin-top: 10px !important;
+}
+
+
+.fieldoftwo .referencegroup {
+    margin: -15px;
+    padding: 15px;
+
+}
+
+.fieldoftwo .wrapboard .referencegroup {
+  /*margin-top:0px !important;*/
+}
+
+.fieldoftwo .wrapboard .referencegroup p {
+  width: calc(100% - 50px);
+  /*margin-top:20px !important;*/
+}
 
 @media (max-width: 1200px) {
   #controlbar .controlwrapper .infowrap {
@@ -194,10 +228,38 @@ p {
     text-align: center;
   }
 }
+.indicator .tworowsimg {
+  height: 128px;
+}
+.indicator .tworowsimg .gaugeperform {
+  margin-top: 18px !important;
+}
+.indicator .tworows {
+  font-size: 14px;
+}
 
 @media (min-width: 768px) and (max-width: 992px) {
   .controlwrapper .infowrap h3 {
     height: 52px;
+  }
+  .indicator .imgwrapper {
+    height: 110px;
+  }
+  .indicator .tworowsimg {
+    height: 128px;
+  }
+  .indicator .tworowsimg .gaugeperform {
+    margin-top: 10px !important;
+  }
+  .indicator .tworows {
+    font-size: 13px;
+  }
+  .indicator svg {
+    left: -5px !important;
+  }
+  .indicator .referencegroup img {
+    display: block !important;
+    margin: 0 auto 20px auto !important;
   }
 }
 
@@ -228,9 +290,27 @@ p {
   .infotextstudent {
     padding-left: 0px !important;
   }
+  .indicator .tworowsimg {
+    height: 104px !important;
+  }
+  .indicator .tworowsimg .gaugeperform {
+    margin-top: 0px !important;
+  }
+  .indicator .tworows {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 704px) {
+  .indicator .tworowsimg {
+    height: 126px !important;
+  }
+  .indicator .tworowsimg .gaugeperform {
+    margin-top: 20px !important;
+  }
+  .indicator .tworows {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 425px) {

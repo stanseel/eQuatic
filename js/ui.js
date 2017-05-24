@@ -30,9 +30,40 @@ var a = new JustGage({
   });
 
 
-  var b = new JustGage({
-      id: "gauge2",
-      value: 75,
+var b = new JustGage({
+    id: "gauge2",
+    value: 75,
+    min: 0,
+    max: 100,
+    title: "",
+    gaugeColor:bggauge,
+    valueFontColor:fontcolorvalue,
+    valueFontFamily:fontfamilyvalue,
+    hideMinMax:true,
+    levelColors:exampleblue,
+    gaugeWidthScale: borderwidthgauge
+    //labelFontColor:
+  });
+
+
+var c = new JustGage({
+    id: "gauge3",
+    value: 100,
+    min: 0,
+    max: 100,
+    title: "",
+    gaugeColor:bggauge,
+    valueFontColor:fontcolorvalue,
+    valueFontFamily:fontfamilyvalue,
+    hideMinMax:true,
+    levelColors:examplegreen,
+    gaugeWidthScale: borderwidthgauge
+    //labelFontColor:
+  });
+
+  var d = new JustGage({
+      id: "gauge4",
+      value: 89,
       min: 0,
       max: 100,
       title: "",
@@ -40,15 +71,29 @@ var a = new JustGage({
       valueFontColor:fontcolorvalue,
       valueFontFamily:fontfamilyvalue,
       hideMinMax:true,
-      levelColors:exampleblue,
+      levelColors:examplegreen,
       gaugeWidthScale: borderwidthgauge
       //labelFontColor:
     });
 
+  var e = new JustGage({
+      id: "gauge5",
+      value: 63.5,
+      min: 0,
+      max: 100,
+      title: "",
+      gaugeColor:bggauge,
+      valueFontColor:fontcolorvalue,
+      valueFontFamily:fontfamilyvalue,
+      hideMinMax:true,
+      levelColors:examplegreen,
+      gaugeWidthScale: borderwidthgauge
+      //labelFontColor:
+    });
 
-    var c = new JustGage({
-        id: "gauge3",
-        value: 100,
+    var f = new JustGage({
+        id: "gauge6",
+        value: 50,
         min: 0,
         max: 100,
         title: "",
@@ -60,10 +105,9 @@ var a = new JustGage({
         gaugeWidthScale: borderwidthgauge
         //labelFontColor:
       });
-
-      var d = new JustGage({
-          id: "gauge4",
-          value: 89,
+      var g = new JustGage({
+          id: "gauge7",
+          value: 70,
           min: 0,
           max: 100,
           title: "",
@@ -76,9 +120,9 @@ var a = new JustGage({
           //labelFontColor:
         });
 
-        var e = new JustGage({
-            id: "gauge5",
-            value: 63.5,
+        var h = new JustGage({
+            id: "gauge8",
+            value: 70,
             min: 0,
             max: 100,
             title: "",
@@ -91,82 +135,33 @@ var a = new JustGage({
             //labelFontColor:
           });
 
-          var f = new JustGage({
-              id: "gauge6",
-              value: 50,
-              min: 0,
-              max: 100,
-              title: "",
-              gaugeColor:bggauge,
-              valueFontColor:fontcolorvalue,
-              valueFontFamily:fontfamilyvalue,
-              hideMinMax:true,
-              levelColors:examplegreen,
-              gaugeWidthScale: borderwidthgauge
-              //labelFontColor:
-            });
-            var g = new JustGage({
-                id: "gauge7",
-                value: 70,
-                min: 0,
-                max: 100,
-                title: "",
-                gaugeColor:bggauge,
-                valueFontColor:fontcolorvalue,
-                valueFontFamily:fontfamilyvalue,
-                hideMinMax:true,
-                levelColors:examplegreen,
-                gaugeWidthScale: borderwidthgauge
-                //labelFontColor:
-              });
+        var test = new JustGage({
+            id: "gauge9",
+            value: 70,
+            min: 0,
+            max: 100,
+            title: "",
+            gaugeColor:bggauge,
+            valueFontColor:fontcolorvalue,
+            valueFontFamily:fontfamilyvalue,
+            hideMinMax:true,
+            levelColors:examplegreen,
+            gaugeWidthScale: borderwidthgauge
+            //labelFontColor:
+          });
 
-              var h = new JustGage({
-                  id: "gauge8",
-                  value: 70,
-                  min: 0,
-                  max: 100,
-                  title: "",
-                  gaugeColor:bggauge,
-                  valueFontColor:fontcolorvalue,
-                  valueFontFamily:fontfamilyvalue,
-                  hideMinMax:true,
-                  levelColors:examplegreen,
-                  gaugeWidthScale: borderwidthgauge
-                  //labelFontColor:
-                });
-
-
-
-                var test = new JustGage({
-                    id: "gauge9",
-                    value: 70,
-                    min: 0,
-                    max: 100,
-                    title: "",
-                    gaugeColor:bggauge,
-                    valueFontColor:fontcolorvalue,
-                    valueFontFamily:fontfamilyvalue,
-                    hideMinMax:true,
-                    levelColors:examplegreen,
-                    gaugeWidthScale: borderwidthgauge
-                    //labelFontColor:
-                  });
-
-
-
-
-                  var test = new JustGage({
-                    id: "gauge500",
-                    value: 30,
-                    min: 0,
-                    max: 100,
-                    title: "",
-                    gaugeColor:bggauge,
-                    valueFontColor:fontcolorvalue,
-                    valueFontFamily:fontfamilyvalue,
-                    hideMinMax:true,
-                    levelColors:examplegreen,
-                    gaugeWidthScale: borderwidthgauge
-                    //labelFontColor:
-                  });
+        var test = new JustGage({
+          id: "gauge500",
+          value: 30,
+          min: 0,
+          max: 100,
+          title: "",
+          gaugeColor:bggauge,
+          valueFontColor:fontcolorvalue,
+          valueFontFamily:fontfamilyvalue,
+          hideMinMax:true,
+          levelColors:examplegreen,
+          gaugeWidthScale: borderwidthgauge
+          //labelFontColor:
+        });
 
