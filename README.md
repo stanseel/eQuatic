@@ -3,7 +3,8 @@ css styling eQuATIC report templates for UGent
 
 Demo https://stanseel.github.io/eQuatic/
 
-CSS / HTML CODE IS UPDATED
+*CSS / HTML CODE IS UPDATED*
+
 Most of the lay-out is now done by using display:table / table-row / table-cell. This makes vertical centering more easy and flexible.  
 
 * When there is only one box next to the gauge, please add class .singleitem to the element with class .tbl-row
