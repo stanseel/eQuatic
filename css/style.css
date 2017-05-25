@@ -85,7 +85,12 @@ p {
 .indicator p {
   margin: 0px !important;
 }
-
+p.refgroup{
+  background-image: url("../images/students-icon.png");
+  background-repeat: no-repeat;
+  background-size: 36px 22px;
+  padding-left: 45px;
+}
 /* - - - - - - - - - - - -- - - - - - - - - - - - */
 /* - - - - - - - - TABLE LAYOUT - - - - - - - - - */
 /* - - - - - - - - - - - -- - - - - - - - - - - - */
