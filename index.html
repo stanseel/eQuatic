@@ -10,38 +10,32 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/print.css" rel="stylesheet">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   </head>
+
   <body>
-    <style>
-    // gauges visualisation
-    .semi-circle {
-      border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
-    }
-    .semi-circle::before {
-      border-radius: 50% 50% 50% 50%/100% 100% 0% 0%;
-    }
-    .semi-circle--mask::before {
-      border-radius:50% 50% 50% 50%/100% 100% 0% 0%;
-    }
-    </style>
+   
   <section id="controlbar">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="controlwrapper control1">
 
-                  <div id="gauge1" class="controlgauge"></div>
+                  <div id="gauge1" style="font-size:1.5em;margin-right:25px"></div>
 
+                  <script>
+                    
+                  </script>
                   <div class="infowrap">
-                    <h3>intervention required</h3>
-
+                    <h3>Intervention required</h3>
                   </div>
               </div>
 
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="controlwrapper control2">
-              <div id="gauge2" class="controlgauge"></div>
+              <div id="gauge2" style="font-size:1.5em;margin-right:25px"></div>
               <div class="infowrap">
                 <h3>Fair</h3>
 
@@ -50,9 +44,9 @@
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="controlwrapper control3">
-              <div id="gauge3" class="controlgauge"></div>
+              <div id="gauge3" style="font-size:1.5em;margin-right:25px"></div>
               <div class="infowrap">
-                <h3>Fair</h3>
+                <h3>Very good</h3>
 
               </div>
             </div>
@@ -60,7 +54,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <a href="linktopdf" class="linktopdf"><img src="images/pdf-icon.svg" width="35" height="40" alt="download pdf">Download PDF version</a>
+              <a href="linktopdf" class="linktopdf"><i class="fas fa-file-pdf" style="font-size: 2em"></i>&nbsp;&nbsp;Download PDF version</a>
             </div>
 
         </div>
@@ -84,7 +78,20 @@
                 <div class="tbl-row">
                   <!-- gauge -->
                   <div class="tbl-cell gauge width40">
-                    <div id="gauge6" class="gaugeperform"></div>
+                    <div id="gauge6" class="gaugesize-regular"></div>
+
+                    <script>
+                      document.querySelectorAll('#gauge6').forEach(function(elem){
+                        new NumberGauge({
+                          target: elem,
+                          props: {
+                            value: 65,
+                            arrows: '20,80'
+                          }
+                        })
+                      })
+                    </script>
+
                   </div>
                   <!-- /gauge -->
                    <div class="tbl-cell width60">
@@ -105,7 +112,7 @@
           
             <div class="tbl-row spancols referencegroup">
                   <div class="tbl-cell">
-                    <p class="refgroup">Reference Group: <strong>10 incoming students</strong></p>
+                    <p><i class="fas fa-users"></i>&nbsp;&nbsp;Reference Group: <strong>10 incoming students</strong></p>
                   </div>
             </div>
             </div> <!-- /table container-->
@@ -139,7 +146,7 @@
                 <div class="tbl-row">
                   <!-- gauge -->
                   <div class="tbl-cell gauge width40 rounded-bottomleft">
-                    <div id="gauge7" class="gaugeperform"></div>
+                    <div id="gauge7" class="gaugesize-regular"></div>
                   </div>
                   <!-- /gauge -->
                    <div class="tbl-cell width60">
@@ -150,7 +157,7 @@
                         </div>
                       </div>
                       <div class="tbl-row">
-                        <div class="tbl-cell data rounded-bottomright">
+                        <div class="tbl-cell data ">
                           <p>Indicator sub-score on facilities question: 58 (20% of total score)</p>
                         </div>
                       </div>
@@ -191,7 +198,7 @@
                 <div class="tbl-row">
                   <!-- gauge -->
                   <div class="tbl-cell gauge width40">
-                    <div id="gauge8" class="gaugeperform"></div>
+                    <div id="gauge8" class="gaugesize-regular"></div>
                   </div>
                   <!-- /gauge -->
                    <div class="tbl-cell width60">
@@ -207,7 +214,7 @@
           
             <div class="tbl-row spancols referencegroup">
                   <div class="tbl-cell">
-                    <p class="refgroup">Reference Group: <strong>10 incoming students</strong></p>
+                    <p><i class="fas fa-users"></i>&nbsp;&nbsp;Reference Group: <strong>10 incoming students</strong></p>
                   </div>
             </div>
             </div> <!-- /table container-->
@@ -241,14 +248,14 @@
                 <div class="tbl-row">
                   <!-- gauge -->
                   <div class="tbl-cell gauge width40 rounded-bottomleft">
-                    <div id="gauge4" class="gaugeperform"></div>
+                    <div id="gauge4" class="gaugesize-regular"></div>
                   </div>
                   <!-- /gauge -->
                    <div class="tbl-cell width60">
                    <div class="tbl-container-inner"> 
                       <div class="tbl-row singleitem" >
-                        <div class="tbl-cell data rounded-bottomright">
-                            <p class="refgroup">Reference Group: <strong>10 incoming students</strong></p>
+                        <div class="tbl-cell data">
+                            <p><i class="fas fa-users"></i>&nbsp;&nbsp;Reference Group: <strong>10 incoming students</strong></p>
                         </div>
                       </div>
                     </div> <!-- /container inner-->
@@ -285,13 +292,13 @@
                 <div class="tbl-row">
                   <!-- gauge -->
                   <div class="tbl-cell gauge width40 rounded-bottomleft">
-                    <div id="gauge5" class="gaugeperform"></div>
+                    <div id="gauge5" class="gaugesize-regular"></div>
                   </div>
                   <!-- /gauge -->
                    <div class="tbl-cell width60">
                    <div class="tbl-container-inner"> 
                       <div class="tbl-row singleitem" >
-                        <div class="tbl-cell data rounded-bottomright">
+                        <div class="tbl-cell data ">
                             <p>ARWU:301-400 </p>
                             <p>THE: 401-500 </p>
                             <p>QS: 501 </p>
@@ -333,7 +340,7 @@
                 <div class="tbl-row">
                   <!-- gauge -->
                   <div class="tbl-cell gauge width40">
-                    <div id="gauge9" class="gaugeperform"></div>
+                    <div id="gauge8" class="gaugesize-regular"></div>
                   </div>
                   <!-- /gauge -->
                    <div class="tbl-cell width60">
@@ -359,7 +366,7 @@
           
             <div class="tbl-row spancols referencegroup">
                   <div class="tbl-cell">
-                    <p class="refgroup">Reference Group: <strong>10 incoming students</strong></p>
+                    <p><i class="fas fa-users"></i>&nbsp;&nbsp;Reference Group: <strong>10 incoming students</strong></p>
                   </div>
             </div>
             </div> <!-- /table container-->
@@ -378,16 +385,10 @@
 
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
+<!-- Javascript -->
+<script src="js/NumberGauge.custom.min.js"></script>
+<script src="js/NumberGauge.min.js"></script>
+<script src="js/ui.thgh.js"></script>
 
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/raphael-2.1.4.min.js"></script>
-    <script src="js/justgage.js"></script>
-    <script src="js/ui.js"></script>
-  </body>
+</body>
 </html>
