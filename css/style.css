@@ -31,7 +31,7 @@ h3{
 }
 #controlbar .control1 {
   border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  /*border-bottom-left-radius: 5px;*/
   border-right: none !important;
 }
 #controlbar .control2 {
@@ -40,9 +40,16 @@ h3{
 }
 #controlbar .control3 {
   border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  /*border-bottom-right-radius: 5px;*/
   border-left: none !important;
 }
+#controlbar .control4{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+  border-top: none !important;
+} 
 .controlwrapper{
   display:flex;
   align-items: center;

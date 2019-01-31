@@ -1,3 +1,12 @@
+document.querySelectorAll('#gauge0').forEach(function(elem){
+  new NumberGauge({
+    target: elem,
+    props: {
+      value: 0,
+      arrows: '20,80'
+    }
+  })
+})
 document.querySelectorAll('#gauge1').forEach(function(elem){
   new NumberGauge({
     target: elem,
